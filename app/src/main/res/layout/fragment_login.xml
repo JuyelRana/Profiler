@@ -21,16 +21,16 @@
 
         <TextView
             android:id="@+id/lbl_login_header"
-            style="@style/Lable.CredentialHeader"
+            style="@style/Label.CardHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="@string/welcome_header" />
+            android:text="@string/header_welcome" />
 
         <TextView
             android:id="@+id/lbl_login_email_sub"
-            style="@style/Lable.Sub"
+            style="@style/Label.Sub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lbl_login_header"
@@ -47,7 +47,7 @@
 
         <TextView
             android:id="@+id/lbl_login_password_sub"
-            style="@style/Lable.Sub"
+            style="@style/Label.Sub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edt_login_email"
