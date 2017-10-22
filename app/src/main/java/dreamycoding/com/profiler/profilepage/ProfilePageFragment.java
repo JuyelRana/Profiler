@@ -18,7 +18,6 @@ import android.widget.Toast;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
-import dreamycoding.com.profiler.FragmentTemplate;
 import dreamycoding.com.profiler.R;
 import dreamycoding.com.profiler.login.LoginActivity;
 

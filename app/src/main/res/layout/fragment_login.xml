@@ -1,27 +1,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_login_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context="dreamycoding.com.profiler.login.LoginFragment">
-
-    <ProgressBar
-        android:id="@+id/pro_login_loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="invisible" />
+    android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/cont_login_content"
+        android:id="@+id/cont_login_fragment_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:gravity="center">
 
         <TextView
             android:id="@+id/lbl_login_header"
-            style="@style/Label.CardHeader"
+            style="@style/Label.CredentialHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -34,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lbl_login_header"
-            android:layout_marginTop="16dp"
             android:text="@string/prompt_email" />
 
         <EditText
@@ -43,7 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lbl_login_email_sub"
-            android:hint="@string/hint_email" />
+            android:hint="@string/hint_email"
+
+            />
 
         <TextView
             android:id="@+id/lbl_login_password_sub"
@@ -51,7 +42,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edt_login_email"
-            android:text="@string/prompt_password" />
+            android:text="@string/prompt_password"
+
+            />
 
         <EditText
             android:id="@+id/edt_login_password"
@@ -68,8 +61,7 @@
             android:layout_height="48dp"
             android:layout_below="@+id/edt_login_password"
             android:layout_centerHorizontal="true"
-            android:text="@string/action_sign_in"
-            android:textAllCaps="false" />
+            android:text="@string/action_sign_in" />
 
         <Button
             android:id="@+id/btn_create_account"
@@ -78,9 +70,17 @@
             android:layout_height="48dp"
             android:layout_below="@+id/btn_login"
             android:layout_centerHorizontal="true"
-            android:text="@string/action_register"
-            android:textAllCaps="false" />
+            android:text="@string/action_register" />
+
 
     </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pro_login_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible" />
 
 </FrameLayout>
